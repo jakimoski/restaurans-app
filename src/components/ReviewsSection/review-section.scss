@@ -1,0 +1,17 @@
+@use "../../css/abstracts/" as *;
+.review {
+  margin-block: 2.5rem;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__single {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgb(92, 91, 91, 0.2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cfcdcd;
+  }
+}

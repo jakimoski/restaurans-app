@@ -1,0 +1,12 @@
+@use "../../css/abstracts/" as *;
+
+.favorite-section {
+  @extend %section;
+  display: grid;
+  gap: 2rem;
+  padding-bottom: 5rem;
+  & h1,
+  h2 {
+    text-align: center;
+  }
+}

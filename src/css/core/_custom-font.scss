@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+@use "sass:math";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $text-color-base;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div($gutter-base, 2);
+  line-height: $line-height-small;
+  font-weight: $font-weight-bold;
+  text-wrap: pretty;
+}
+
+h1 {
+  font-size: clamp($heading-size-big, 8vw, $heading-size-bigger);
+}
+
+h2 {
+  font-size: clamp($heading-size-small, 5vw, $heading-size-big);
+}
+
+h3 {
+  font-size: clamp($font-size-medium, 4vw, $heading-size-tiny);
+  font-weight: $font-weight-normal;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+}

@@ -1,0 +1,76 @@
+.restaurant-card {
+  background-color: rgb(235, 235, 235);
+  padding: 0;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgb(92, 91, 91, 0.2);
+  border: 1px solid #cfcdcd;
+  transition: all 0.2s ease-in-out;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__image {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    & img {
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__details {
+    padding: 1rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__type {
+    color: orangered;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &:hover {
+    box-shadow: 6px 6px 16px rgb(92, 91, 91, 0.3);
+    & img {
+      scale: 1.03;
+      filter: brightness(0.8);
+    }
+  }
+}
+
+.favorite-btn {
+  position: absolute;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  top: 1rem;
+  left: 1rem;
+  z-index: 9999;
+  cursor: pointer;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+  &__icon {
+    font-size: 2rem;
+    color: orangered;
+    stroke: white;
+    stroke-width: 6px;
+  }
+}
