@@ -32,7 +32,7 @@ The Restaurants Application is a React-based web application that allows users t
 Clone the project
 
 ```bash
-  git clone https://git.brainster.co/Vlatko.Jakimoski-FE15/brainsterchallenges_vlatkojakimoski_fe15.git
+  git clone https://github.com/jakimoski/restaurans-app.git
 ```
 
 Go to the project directory
